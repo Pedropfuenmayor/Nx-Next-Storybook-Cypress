@@ -1,4 +1,5 @@
-import styles from './index.module.css';
+import React from 'react';
+
 
 export function Index() {
   /*
@@ -7,7 +8,7 @@ export function Index() {
    * Note: The corresponding styles are in the ./index.css file.
    */
   return (
-    <div className={styles.page}>
+    <div data-test-id='123'>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
