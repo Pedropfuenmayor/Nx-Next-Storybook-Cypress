@@ -23,6 +23,7 @@ specifiers:
   '@storybook/react': ~6.5.9
   '@svgr/webpack': ^5.4.0
   '@testing-library/react': 13.4.0
+  '@types/cors': ^2.8.13
   '@types/express': 4.17.13
   '@types/jest': 28.1.1
   '@types/node': 18.7.1
@@ -33,6 +34,7 @@ specifiers:
   babel-jest: 28.1.1
   babel-loader: 8.1.0
   core-js: ^3.6.5
+  cors: ^2.8.5
   cypress: ^11.0.0
   eslint: ~8.15.0
   eslint-config-next: 13.0.0
@@ -63,7 +65,9 @@ specifiers:
 
 dependencies:
   '@nrwl/next': 15.3.3_2fxlv36aeig2cgednhmmfb3zyy
+  '@types/cors': 2.8.13
   core-js: 3.26.1
+  cors: 2.8.5
   express: 4.18.2
   next: 13.0.0_a7mipu7kvrstgwvi56qu2qyzhe
   react: 18.2.0
@@ -6075,6 +6079,12 @@ packages:
     dependencies:
       '@types/node': 18.11.17
 
+  /@types/cors/2.8.13:
+    resolution: {integrity: sha512-RG8AStHlUiV5ysZQKq97copd2UmVYw3/pRMLefISZ3S1hK104Cwm7iLQ3fTKx+lsUH2CE8FlLaYeEA2LSeqYUA==}
+    dependencies:
+      '@types/node': 18.11.17
+    dev: false
+
   /@types/eslint-scope/3.7.4:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
@@ -8572,6 +8582,14 @@ packages:
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
+
+  /cors/2.8.5:
+    resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
+    engines: {node: '>= 0.10'}
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.2
+    dev: false
 
   /corser/2.0.1:
     resolution: {integrity: sha512-utCYNzRSQIZNPIcGZdQc92UVJYAhtGAteCFg0yRaFm8f0P+CPtyGyHXJcGXnffjCybUCEx3FQ2G7U3/o9eIkVQ==}
@@ -14048,7 +14066,6 @@ packages:
   /object-assign/4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /object-copy/0.1.0:
     resolution: {integrity: sha512-79LYn6VAb63zgtmAteVOWo9Vdj71ZVBy3Pbse+VqxDpEP83XuujMrGqHIwAXJ5I/aM0zU7dIyIAhifVTPrNItQ==}
