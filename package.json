@@ -5,7 +5,10 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "generate":"pnpm prisma generate --schema=./apps/my-nest-app/prisma/schema.prisma",
+    "start:server":"pnpm nx run my-nest-app:build:production",
+    "start:prod": "generate & start:server"
   },
   "private": true,
   "dependencies": {
