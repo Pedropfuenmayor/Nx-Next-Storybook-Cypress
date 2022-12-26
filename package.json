@@ -7,7 +7,7 @@
     "build": "nx build",
     "test": "nx test",
     "generate":"prisma generate --schema=./apps/my-nest-app/prisma/schema.prisma",
-    "start:server":"nx run my-nest-app:build:production",
+    "start:server":"nx run my-nest-app:serve:production",
     "start:prod": "pnpm generate & pnpm start:server"
   },
   "private": true,
